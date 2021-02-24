@@ -1,0 +1,5 @@
+// -- start
+yarn dev
+
+// -- [[200827125000]]
+https://bulma.io/documentation/components/navbar/#fixed-navbar

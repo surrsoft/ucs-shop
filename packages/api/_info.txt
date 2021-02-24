@@ -1,0 +1,4 @@
+
+// ---
+To start perform
+$ npm run start:dev

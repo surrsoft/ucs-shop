@@ -1,0 +1,80 @@
+prodcat,prodsubcat,comment,weightGramm,costShipToRusRub,costShipInRusRub,markupRub
+prodcat__accessory,prodsubcat__backpack,Рюкзак,900,891,,
+prodcat__accessory,prodsubcat__bag,Сумка,900,891,,2000
+prodcat__accessory,prodsubcat__belt,Ремень,150,"148,5",,
+prodcat__accessory,prodsubcat__cap,Шапка,180,"178,2",,
+prodcat__accessory,prodsubcat__case,Чехлы,,0,,1200
+prodcat__accessory,prodsubcat__clutch,Клатч,300,297,,
+prodcat__accessory,prodsubcat__crossbody,Кроссбоди,,0,,1600
+prodcat__accessory,prodsubcat__decoration,Украшение,300,297,,
+prodcat__accessory,prodsubcat__glasses,Очки,300,297,,
+prodcat__accessory,prodsubcat__gloves,Перчатки,120,"118,8",,
+prodcat__accessory,prodsubcat__purse,Кошелек,200,198,,
+prodcat__accessory,prodsubcat__scarf,Шарф,300,297,,1200
+prodcat__accessory,prodsubcat__watch,Часы,400,396,,2000
+prodcat__children,prodsubcat__costume,Костюм,,0,,1800
+prodcat__children,prodsubcat__cross,Кроссовки,350,"346,5",,2000
+prodcat__children,prodsubcat__dress,Платье,150,"148,5",,
+prodcat__children,prodsubcat__hoodie,Худи,500,495,,1502
+prodcat__children,prodsubcat__hoody,Толстовка,300,297,,
+prodcat__children,prodsubcat__jacketautumn,Куртка осенняя,600,594,,1700
+prodcat__children,prodsubcat__jacketwinter,Куртка зимняя,700,693,,1700
+prodcat__children,prodsubcat__jeans,Джинсы,250,"247,5",,
+prodcat__children,prodsubcat__longs,Лонги,,0,,1400
+prodcat__children,prodsubcat__shirt,Рубашка,130,"128,7",,
+prodcat__children,prodsubcat__shoes,Туфли,500,495,,2000
+prodcat__children,prodsubcat__shorts,Шорты,200,198,,
+prodcat__children,prodsubcat__skirt,Юбка,200,198,,
+prodcat__children,prodsubcat__slippers,Тапки,200,198,,2000
+prodcat__children,prodsubcat__sneakers,Кеды,350,"346,5",,2000
+prodcat__children,prodsubcat__sweater,Свитер,500,495,,1501
+prodcat__children,prodsubcat__sweatshirt,Свитшот,500,495,,1500
+prodcat__children,prodsubcat__tracksuit,Спортиный костюм,500,495,,
+prodcat__children,prodsubcat__tshirt,Футболка,400,396,,850
+prodcat__children,prodsubcat__underpants,Трусы,50,"49,5",,
+prodcat__cosmetic,prodsubcat__cosmetic,Косметика,100,99,,
+prodcat__man,prodsubcat__coat,Пальто,1100,1089,,1700
+prodcat__man,prodsubcat__costume,Костюм,,0,,1800
+prodcat__man,prodsubcat__cross,Кроссовки,800,792,,2000
+prodcat__man,prodsubcat__hoodie,Худи,500,495,,1502
+prodcat__man,prodsubcat__hoody,Толстовка,500,495,,
+prodcat__man,prodsubcat__jacketautumn,Куртка осенняя,900,891,,1700
+prodcat__man,prodsubcat__jacketwinter,Куртка зимняя,1100,1089,,1700
+prodcat__man,prodsubcat__jeans,Джинсы,600,594,,
+prodcat__man,prodsubcat__longs,Лонги,,0,,1400
+prodcat__man,prodsubcat__shirt,Рубашка,200,198,,
+prodcat__man,prodsubcat__shoes,Ботинки,1100,1089,,2000
+prodcat__man,prodsubcat__shorts,Шорты,400,396,,
+prodcat__man,prodsubcat__slippers,Тапки,400,396,,2000
+prodcat__man,prodsubcat__sneakers,Кеды,800,792,,2000
+prodcat__man,prodsubcat__sweater,Свитер,500,495,,1501
+prodcat__man,prodsubcat__sweatshirt,Свитшот,500,495,,1500
+prodcat__man,prodsubcat__tracksuit,Спортивный костюм,900,891,,
+prodcat__man,prodsubcat__tshirt,Футболка,200,,,850
+prodcat__man,prodsubcat__underpants,Трусы,70,"69,3",,
+prodcat__woman,prodsubcat__balletshoes,Балетки,350,"346,5",,2000
+prodcat__woman,prodsubcat__boots,Сапоги,1200,1188,,2000
+prodcat__woman,prodsubcat__bra,Бюстгалтер,80,"79,2",,
+prodcat__woman,prodsubcat__coat,Пальто,1000,990,,1700
+prodcat__woman,prodsubcat__costume,Костюм,,0,,1800
+prodcat__woman,prodsubcat__cross,Кроссовки,700,693,,2000
+prodcat__woman,prodsubcat__dress,Платье,300,297,,
+prodcat__woman,prodsubcat__hoodie,Худи,500,495,,1502
+prodcat__woman,prodsubcat__hoody,Толстовка,400,396,,
+prodcat__woman,prodsubcat__jacketautumn,Куртка осенняя,800,792,,1700
+prodcat__woman,prodsubcat__jacketwinter,Куртка зимняя,900,891,,1700
+prodcat__woman,prodsubcat__jeans,Джинсы,400,396,,
+prodcat__woman,prodsubcat__leggings,Леггинсы,150,"148,5",,
+prodcat__woman,prodsubcat__longs,Лонги,,0,,1400
+prodcat__woman,prodsubcat__shirt,Рубашка,180,"178,2",,
+prodcat__woman,prodsubcat__shoes,Туфли,750,"742,5",,2000
+prodcat__woman,prodsubcat__shorts,Шорты,300,297,,
+prodcat__woman,prodsubcat__skirt,Юбка,300,297,,
+prodcat__woman,prodsubcat__slippers,Тапки,300,297,,2000
+prodcat__woman,prodsubcat__sneakers,Кеды,700,693,,2000
+prodcat__woman,prodsubcat__sweater,Свитер,500,495,,1501
+prodcat__woman,prodsubcat__sweatshirt,Свитшот,500,495,,1500
+prodcat__woman,prodsubcat__swimsuit,Купальник,150,"148,5",,
+prodcat__woman,prodsubcat__tracksuit,Спортиный костюм,700,693,,
+prodcat__woman,prodsubcat__tshirt,Футболка,200,198,,850
+prodcat__woman,prodsubcat__underpants,Трусы,50,"49,5",,
