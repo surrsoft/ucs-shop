@@ -9,7 +9,7 @@ COPY . $PATH_APP
 # ---
 WORKDIR $PATH_APP
 RUN npm install
-EXPOSE 3001
+EXPOSE 22083
 # ---
 # ---
 CMD [ "npm", "run", "start:dev" ]

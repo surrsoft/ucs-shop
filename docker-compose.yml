@@ -16,7 +16,7 @@ services:
         container_name: "ucs_server"
         build: ./packages/api
         ports:
-            - "3001:3001"
+            - "22083:22083"
         depends_on:
             - xmongodb
         volumes:

@@ -1,5 +1,5 @@
 // ---
-export const CST_BACKEND_URL = 'http://localhost:3001';
+export const CST_BACKEND_URL = 'http://localhost:22083';
 
 // --- SYNC [200903161300]
 export const CST_ERR_CODE__DUP_KEY_EMAIL = 'err_code_dup_key_email';

@@ -11,11 +11,14 @@
 * start frontend:
     * `cd packages/client`
     * `yarn dev`
-    * navigate in browser to `localhost:3000`
+    * navigate in browser to `localhost:22082`
 
 * start backend:
     * at root run `docker-compose up`; 
-    * backend will started at `localhost:3001`; 
-    * "GraphQL Playground" will accessed in browser  at `localhost:3001/graphql`
+    * backend will started at `localhost:22083`; 
+    * "GraphQL Playground" will accessed in browser  at `localhost:22083/graphql`
     * mongodb без логина/пароля
 
+# История
+* 2021-07-01 почему то бэкенд перестал запускаться через npm, а через yarn запускается
+![img.png](img.png)
