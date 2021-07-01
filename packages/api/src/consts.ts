@@ -8,7 +8,7 @@ export const CONF_ZEGO_FILE = './src/gen/schema.gen.graphql';
 // --- MongoDB
 // SYNC [200902082800]
 export const CONF_MONGO_IP = process.env.ENV_START_MODE === 'local' ? 'localhost' : 'xmongodb';
-export const CONF_MONGO_PORT = '27017';
+export const CONF_MONGO_PORT = '22081';
 export const CONF_MONGO_DB_NAME = 'test';
 export const CONF_MONGO_SUMMARY = `mongodb://${CONF_MONGO_IP}:${CONF_MONGO_PORT}/${CONF_MONGO_DB_NAME}`;
 

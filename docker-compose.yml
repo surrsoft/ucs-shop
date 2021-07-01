@@ -5,7 +5,7 @@ services:
         container_name: 'ucs_db'
         image: 'mongo:4.0'
         ports:
-            - '27017:27017'
+            - '22081:27017'
         restart: always
         environment:
             - MONGODB_DATABASE="test"
