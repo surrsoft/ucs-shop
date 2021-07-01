@@ -10,22 +10,30 @@
 * скачиваем зависимости
   * cd packages/api && yarn install
   * cd packages/client && yarn install
+  * альтернатива - `make dep_inst`
 
 * запускаем фронт
-    * `cd packages/client`
-    * `yarn dev`
+    * `cd packages/client && yarn dev`
+    * альтернатива - `make front_start`
     * переходим в браузере по адресу `localhost:22082`
-
+  
 * запускаем MongoDB
   * из корня проекта выполняем `docker-compose -f docker-compose-mongo.yml up`
+  * альтернатива - `make mongo_start`
   * БД будет располагаться на эндпоинте `localhost:22081`
   * mongodb без логина/пароля, имя БД - `test`
-
-* запуск бэка в контейнере:
-    * из корня проекта выполнить `docker-compose -f docker-compose-back.yml up`; 
-    * бэк будет работать на эандпоинте `localhost:22083`; 
+  
+* запускаем бэк:
+    * в контейнере
+      * из корня проекта выполнить `docker-compose -f docker-compose-back.yml up`; 
+      * альтернатива - `make back_start`
+    * или локально
+      * `cd packages/api && yarn run start:dev`
+      * альтернатива - `make back_start_local`
+    * работает на эандпоинте `localhost:22083`; 
     * "GraphQL Playground" будет доступен в браузере по адресу `localhost:22083/graphql`
 
 # История
 * 2021-07-01 почему то бэкенд перестал запускаться через npm, а через yarn запускается
 ![img.png](img.png)
+* 2021-07-01 поменяны порты, добавлен Makefile
