@@ -3,21 +3,28 @@
 * на бэке используем Nest.js и БД MongoDB. Оба упаковываем в Docker-контейнеры (см. docker-compose.yml)
 * на фронте используем Nuxt.js (Vue)
 
-# local start
-* clone `git clone ...`
-* cd packages/api && npm i
-* cd packages/client && yarn install
+# Запуск локальный
+* клонируем
+  * clone `git clone ...`
+  
+* скачиваем зависимости
+  * cd packages/api && yarn install
+  * cd packages/client && yarn install
 
-* start frontend:
+* запускаем фронт
     * `cd packages/client`
     * `yarn dev`
-    * navigate in browser to `localhost:22082`
+    * переходим в браузере по адресу `localhost:22082`
 
-* start backend:
-    * at root run `docker-compose up`; 
-    * backend will started at `localhost:22083`; 
-    * "GraphQL Playground" will accessed in browser  at `localhost:22083/graphql`
-    * mongodb без логина/пароля
+* запускаем MongoDB
+  * из корня проекта выполняем `docker-compose -f docker-compose-mongo.yml up`
+  * БД будет располагаться на эндпоинте `localhost:22081`
+  * mongodb без логина/пароля, имя БД - `test`
+
+* запуск бэка в контейнере:
+    * из корня проекта выполнить `docker-compose -f docker-compose-back.yml up`; 
+    * бэк будет работать на эандпоинте `localhost:22083`; 
+    * "GraphQL Playground" будет доступен в браузере по адресу `localhost:22083/graphql`
 
 # История
 * 2021-07-01 почему то бэкенд перестал запускаться через npm, а через yarn запускается

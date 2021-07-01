@@ -1,0 +1,14 @@
+version: '3.5'
+services:
+    xmongodb:
+        # SYNC [210701184625]
+        container_name: 'ucs_db'
+        image: 'mongo:4.0'
+        # 27017 - SYNC [210701184716], 22081 - SYNC [210701184742]
+        ports:
+            - '22081:27017'
+        restart: always
+        environment:
+            - MONGODB_DATABASE="test"  # SYNC [210701184839]
+        volumes:
+            - './mongodb:/data/db'

@@ -1,6 +1,6 @@
-FROM node:12.6.0
-ENV ENV_START_MODE=docker
+FROM node:12.22.0
 # --- variables
+ENV ENV_START_MODE=docker
 ARG PATH_APP=/usr/src/app
 # --- create directories
 RUN mkdir -p $PATH_APP
@@ -8,8 +8,8 @@ RUN mkdir -p $PATH_APP
 COPY . $PATH_APP
 # ---
 WORKDIR $PATH_APP
-RUN npm install
+RUN yarn install
 EXPOSE 22083
 # ---
 # ---
-CMD [ "npm", "run", "start:dev" ]
+CMD [ "yarn", "run", "start:dev" ]

@@ -1,0 +1,9 @@
+version: '3.5'
+services:
+    xapi:
+        container_name: "ucs_server"
+        build: ./packages/api
+        ports:
+            - "22083:22083"
+        volumes:
+            - './packages/api/src:/usr/src/app/src'

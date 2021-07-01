@@ -5,13 +5,21 @@ console.log('BR: process.env.ENV_START_MODE=', process.env.ENV_START_MODE);
 // [zego]-file
 export const CONF_ZEGO_FILE = './src/gen/schema.gen.graphql';
 
-// --- MongoDB
-// SYNC [200902082800]
-export const CONF_MONGO_IP = process.env.ENV_START_MODE ?  'xmongodb' : 'localhost';
-export const CONF_MONGO_PORT = '22081';
+// --- MongoDB, SYNC [[210701184839]]
 export const CONF_MONGO_DB_NAME = 'test';
-export const CONF_MONGO_SUMMARY = `mongodb://${CONF_MONGO_IP}:${CONF_MONGO_PORT}/${CONF_MONGO_DB_NAME}`;
-console.log('!!-!!-!! CONF_MONGO_SUMMARY {210701122054}\n', CONF_MONGO_SUMMARY); // del+
+
+// SYNC [[210701184625]]
+let ip0 = 'ucs_db';
+// SYNC [[210701184716]]
+let port0 = '27017';
+if(!process.env.ENV_START_MODE) {
+  // ^ если запуск не в контейенере
+  ip0 = 'localhost';
+  // SYNC [[210701184742]]
+  port0 = '22081';
+}
+export const CONF_MONGO_SUMMARY = `mongodb://${ip0}:${port0}/${CONF_MONGO_DB_NAME}`;
+console.log('BR: CONF_MONGO_SUMMARY {210701122054}\n', CONF_MONGO_SUMMARY);
 
 // --- Mongoose
 // collection 'cards'
