@@ -1,6 +1,6 @@
 
 # Описание
-* на бэке используем Nest.js и БД MongoDB. Оба упаковываем в Docker-контейнеры (см. docker-compose.yml)
+* на бэке используем Nest.js и БД MongoDB. Оба упаковываем в Docker-контейнеры (см. docker-compose-back.yml и docker-compose-mongo.yml)
 * на фронте используем Nuxt.js (Vue)
 
 # Запуск локальный
