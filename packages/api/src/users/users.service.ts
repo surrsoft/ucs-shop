@@ -20,6 +20,11 @@ export class UsersService {
     return this.usersModel.find().exec()
   }
 
+  /**
+   *
+   * @param email
+   * @return null если не находит
+   */
   async findOne(email: string): Promise<User> {
     const user = await this.usersModel.findOne({email}).exec()
     return user

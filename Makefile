@@ -19,7 +19,7 @@ mongo_del:
 # --- бэк, порт 22083
 # запустить в docker-контейнере
 back_start:
-	docker-compose -f docker-compose-back.yml up
+	docker-compose -f docker-compose-back.yml up --build
 
 # запустить бэк локально, без контейнера
 back_start_local:

@@ -54,7 +54,7 @@
                 :disabled="invalid || isLoading"
                 @click="loginHandle"
               >
-                Войти
+                {{btnSubmitText || "войти"}}
               </button>
             </div>
 
@@ -68,8 +68,8 @@
 
 <script>
 
-  import { utilAuthLoginB } from '../utils/auth';
-  import { CST_RESAUTH_OK, VIKW__USER_NO_FOUND } from '../utils/consts';
+import { utilAuthLoginB, utilAuthRegister } from '../utils/auth';
+  import { CST_REG_MODE__REG, CST_RESAUTH_OK, VIKW__USER_NO_FOUND } from '../utils/consts';
   import { stdSleep, utilIsEmail, utilStringNormalize } from '../utils/stdutils';
   import { gqlUserPasswordRestore } from '../utils/gql-queries';
   import { get } from 'lodash';
@@ -83,6 +83,7 @@
       'showCommentRetryEmail',
       'showForgotButton',
       'isEmailDisable',
+      'btnSubmitText',
       'mode'
     ],
     data() {
@@ -98,14 +99,25 @@
     },
     methods: {
       async loginHandle() {
-        await stdSleep(1000)
-        const email0 = utilStringNormalize(this.dEmail);
-        const res = await utilAuthLoginB(email0, this.dPassword)
+        console.log(`!!-!!-!! 1528-10 -> :::::::::::::: loginHandle() {210702152821}:${Date.now()}`); // del+
+        await stdSleep(1000); // TODO temp
+        const dEmail0 = utilStringNormalize(this.dEmail);
+        console.log('!!-!!-!! 1528-20 dEmail0 {210702150259}\n', dEmail0); // del+
+        console.log('!!-!!-!! 1528-30 this.mode {210702152759}\n', this.mode); // del+
+        // ---
+        let res;
+        if(this.mode === CST_REG_MODE__REG) {
+          res = await utilAuthRegister(dEmail0, this.dPassword)
+        } else {
+          res = await utilAuthLoginB(dEmail0, this.dPassword);
+        }
+        console.log('!!-!!-!! res {210702150321}\n', res); // del+
+        // ---
         if (res.code === CST_RESAUTH_OK) {
           this.$nuxt.$emit('event-12');
           await this.$router.push({ name: 'userpage' });
         } else {
-          this.$notify({ group: 'foo', title: 'Неверный логин или пароль', type: 'error' })
+          this.$notify({ group: 'foo', title: 'Неверный логин или пароль', type: 'error' });
         }
       },
       // snippet 200904090200

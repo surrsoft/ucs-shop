@@ -6,4 +6,4 @@ services:
         ports:
             - "22083:22083"
         volumes:
-            - './packages/api/src:/usr/src/app/src'
+            - './packages/api:/usr/src/app'
