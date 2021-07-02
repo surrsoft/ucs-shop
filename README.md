@@ -30,7 +30,7 @@
     * или локально
       * `cd packages/api && yarn run start:dev`
       * альтернатива - `make back_start_local`
-    * работает на эандпоинте `localhost:22083`; 
+    * работает на эндпоинте `localhost:22083`
     * "GraphQL Playground" будет доступен в браузере по адресу `localhost:22083/graphql`
 
 # История
