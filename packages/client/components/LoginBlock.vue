@@ -111,7 +111,7 @@ import { utilAuthLoginB, utilAuthRegister } from '../utils/auth';
         } else {
           res = await utilAuthLoginB(dEmail0, this.dPassword);
         }
-        console.log('!!-!!-!! res {210702150321}\n', res); // del+
+        console.log('!!-!!-!! 1528-40 res {210702150321}\n', res); // del+
         // ---
         if (res.code === CST_RESAUTH_OK) {
           this.$nuxt.$emit('event-12');

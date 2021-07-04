@@ -27,5 +27,3 @@ back_start_local:
 
 back_down:
 	docker-compose -f docker-compose-back.yml down
-
-
